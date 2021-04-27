@@ -1,0 +1,7 @@
+# Project exclude paths
+/xm_shop_back_web/target/
+/xm_shop_common/target/
+/xm_shop_dao/target/
+/xm_shop_front_web/target/
+/xm_shop_pojo/target/
+/xm_shop_service/target/
