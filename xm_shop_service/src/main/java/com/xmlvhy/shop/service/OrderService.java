@@ -36,4 +36,5 @@ public interface OrderService {
     String getWxPayUrl(Order order,String ip) throws Exception;
 
     Map<String,String> getWxPayResultMap(Order order, String ip) throws Exception;
+    Map<String,String> createNative(Order order) throws Exception;
 }

@@ -1,8 +1,10 @@
 package com.xmlvhy.shop.service.impl;
 
+import com.github.wxpay.sdk.WXPayUtil;
 import com.xmlvhy.shop.common.constant.OrderConstant;
 import com.xmlvhy.shop.common.constant.WxPayConfig;
 import com.xmlvhy.shop.common.utils.CommonUtils;
+import com.xmlvhy.shop.common.utils.HttpClient;
 import com.xmlvhy.shop.common.utils.HttpUtils;
 import com.xmlvhy.shop.common.utils.WxPayUtils;
 import com.xmlvhy.shop.dao.OrderDao;
@@ -18,6 +20,7 @@ import org.springframework.transaction.annotation.Propagation;
 import org.springframework.transaction.annotation.Transactional;
 import org.springframework.util.ObjectUtils;
 
+import java.math.BigDecimal;
 import java.util.*;
 
 /**
@@ -299,7 +302,7 @@ public class OrderServiceImpl implements OrderService {
         //随机字符串
         params.put("nonce_str", CommonUtils.generateUUID());
         /*商品描述，必传*/
-        params.put("body","小莫水果");
+        params.put("body","鲜花商城");
         /*商户订单号*/
         params.put("out_trade_no",order.getOrderNumber());
 
@@ -309,7 +312,7 @@ public class OrderServiceImpl implements OrderService {
         params.put("total_fee", String.valueOf(price));
 
         /*终端IP,必传*/
-        params.put("spbill_create_ip",ip);
+        params.put("spbill_create_ip","127.0.0.1");
         /*微信回调地址*/
         params.put("notify_url",WxPayConfig.wxpay_callback);
         /*trade_type=NATIVE，此参数必传。此id为二维码中包含的商品ID，商户自行定义*/
@@ -334,6 +337,40 @@ public class OrderServiceImpl implements OrderService {
         Map<String, String> payResultMap = WxPayUtils.xmlToMap(payResult);
         if (payResultMap != null) {
             return payResultMap;
+        }
+        return null;
+    }
+
+    @Override
+    public Map<String, String> createNative(Order order) throws Exception {
+        try {
+            //根据订单id获取订单信息
+
+            Map m = new HashMap();
+            //1、设置支付参数
+            m.put("appid", "wx74862e0dfcf69954");
+            m.put("mch_id", "1558950191");
+            m.put("nonce_str", WXPayUtil.generateNonceStr());
+            m.put("body", "水果商城");
+            m.put("out_trade_no", order.getOrderNumber());
+            /*总金额,单位为分,由元转化为分,*/
+            int price = (int) (order.getPrice() * 100);
+            m.put("total_fee", String.valueOf(price));
+            m.put("spbill_create_ip", "127.0.0.1");
+            m.put("notify_url", "http://guli.shop/api/order/weixinPay/weixinNotify\n");
+            m.put("trade_type", "NATIVE");
+            //2、HTTPClient来根据URL访问第三方接口并且传递参数
+            HttpClient client = new HttpClient("https://api.mch.weixin.qq.com/pay/unifiedorder");
+            //client设置参数
+            client.setXmlParam(WXPayUtil.generateSignedXml(m, "T6m9iK73b0kn9g5v426MKfHQH7X8rKwb"));
+            client.setHttps(true);
+            client.post();
+            //3、返回第三方的数据
+            String xml = client.getContent();
+            Map<String, String> resultMap = WXPayUtil.xmlToMap(xml);
+            return resultMap;
+        } catch (Exception e) {
+
         }
         return null;
     }
