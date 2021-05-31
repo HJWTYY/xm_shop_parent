@@ -8,8 +8,6 @@ import java.io.Serializable;
 import java.util.Date;
 
 /**
- * Author: 小莫
- * Date: 2019-03-11 9:48
  * Description: 系统用户实体类
  */
 @Data

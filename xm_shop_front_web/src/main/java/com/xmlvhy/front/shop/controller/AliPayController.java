@@ -24,8 +24,6 @@ import java.util.Iterator;
 import java.util.Map;
 
 /**
- * Author: 小莫
- * Date: 2019-04-02 14:37
  * Description: 支付接口
  */
 @RequestMapping("/front/pay")
@@ -38,8 +36,6 @@ public class AliPayController {
 
     /**
      *功能描述: 订单支付，调支付支付页面
-     * @Author 小莫
-     * @Date 16:25 2019/04/02
      * @Param [orderNumber, session]
      * @return java.lang.String
      */
@@ -58,7 +54,7 @@ public class AliPayController {
         //付款金额，必填
         Double total_amount = order.getPrice();
         //订单名称，必填
-        String subject = "小莫水果";
+        String subject = "鲜花商品";
         //商品描述，可空
         String body = "用户订购商品个数：" + order.getProductNumber();
 
@@ -88,8 +84,6 @@ public class AliPayController {
 
     /**
      *功能描述: 支付宝同步通知页面
-     * @Author 小莫
-     * @Date 16:26 2019/04/02
      * @Param [request, response, session]
      * @return org.springframework.web.servlet.ModelAndView
      */

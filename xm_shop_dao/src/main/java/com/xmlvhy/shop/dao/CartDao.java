@@ -6,8 +6,6 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * @Author: 小莫
- * Date: 2019-03-19 16:52
  * Description: 购物车业务层
  */
 public interface CartDao {

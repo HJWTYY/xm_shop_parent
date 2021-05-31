@@ -27,8 +27,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Author: 小莫
- * Date: 2019-03-09 9:36
  * Description: 后台系统用户登录
  */
 @Controller
@@ -70,8 +68,6 @@ public class SystemUserController {
      * 功能描述: 获取所有系统用户类表，分页查询
      *
      * @return java.lang.String
-     * @Author 小莫
-     * @Date 21:35 2019/03/11
      * @Param [pageNum, model]
      */
     @RequestMapping("getAllSystemUsers")
@@ -92,8 +88,6 @@ public class SystemUserController {
      * 功能描述: 通过多个条件查询系统用户的列表
      *
      * @return java.lang.String
-     * @Author 小莫
-     * @Date 21:36 2019/03/11
      * @Param [systemUserParam, pageNum, model]
      */
     @RequestMapping("findSystemUserByParams")
@@ -118,8 +112,6 @@ public class SystemUserController {
      * 功能描述: 页面初始化，把角色的数据加载到页面中
      *
      * @return java.util.List<com.xmlvhy.shop.pojo.Role>
-     * @Author 小莫
-     * @Date 11:45 2019/03/11
      * @Param []
      */
     @ModelAttribute("roles")
@@ -132,8 +124,6 @@ public class SystemUserController {
      * 功能描述: 添加一个系统用户
      *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 21:37 2019/03/11
      * @Param [systemUserVo]
      */
     @RequestMapping("addSystemUser")
@@ -160,8 +150,6 @@ public class SystemUserController {
      * 功能描述: 修改系统用户的状态，启用或禁用账户
      *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 21:37 2019/03/11
      * @Param [id]
      */
     @RequestMapping("modifySystemUserStatus")
@@ -179,8 +167,6 @@ public class SystemUserController {
      * 功能描述: 查询某个系统用户信息
      *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 21:38 2019/03/11
      * @Param [id]
      */
     @RequestMapping("findSystemUser")
@@ -198,8 +184,6 @@ public class SystemUserController {
      * 功能描述: 更新系统用户信息
      *
      * @return java.lang.String
-     * @Author 小莫
-     * @Date 21:38 2019/03/11
      * @Param [systemUserVo, pageNum, model]
      */
     @RequestMapping("modifySystemUser")
@@ -218,8 +202,6 @@ public class SystemUserController {
      * 功能描述: 校验登录账户名是否可用
      *
      * @return java.util.Map<java.lang.String   ,   java.lang.Object>
-     * @Author 小莫
-     * @Date 21:38 2019/03/11
      * @Param [loginName]
      */
     @RequestMapping("checkSystemUserLoginName")
@@ -238,8 +220,6 @@ public class SystemUserController {
 
     /**
      *功能描述: session 超时
-     * @Author 小莫
-     * @Date 11:26 2019/04/07
      * @Param [attributes]
      * @return java.lang.String
      */

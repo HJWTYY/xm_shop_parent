@@ -11,9 +11,7 @@ import javax.servlet.http.HttpServletRequest;
 import java.util.Enumeration;
 
 /**
- * @ClassName XmshopExceptionHandler
- * @Description TODO
- * @Author 小莫
+
  * @Date 2019/04/07 9:35
  * @Version 1.0
  **/

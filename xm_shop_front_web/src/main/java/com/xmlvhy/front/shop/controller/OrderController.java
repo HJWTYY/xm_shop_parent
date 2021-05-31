@@ -44,8 +44,6 @@ public class OrderController {
 
     /**
      *功能描述: 客户所有订单展示列表
-     * @Author 小莫
-     * @Date 11:46 2019/03/26
      * @Param []
      * @return java.lang.String
      */
@@ -64,8 +62,6 @@ public class OrderController {
 
     /**
      *功能描述: 加载地址
-     * @Author 小莫
-     * @Date 13:25 2019/03/23
      * @Param [session]
      * @return java.util.List<Shipping>
      */
@@ -78,8 +74,6 @@ public class OrderController {
 
     /**
      *功能描述: 显示不同订单状态的数量
-     * @Author 小莫
-     * @Date 11:26 2019/03/30
      * @Param [session]
      * @return java.util.Map<java.lang.String,java.lang.Object>
      */
@@ -111,8 +105,6 @@ public class OrderController {
 
     /**
      *功能描述: 确认订单，此接口提供展示客户的确认订单数据
-     * @Author 小莫
-     * @Date 14:19 2019/03/22
      * @Param [session, model]
      * @return java.lang.String
      */
@@ -140,8 +132,6 @@ public class OrderController {
 
     /**
      *功能描述: 创建订单 和订单明细 ，另外订单生成成功，需要将对应购物车移除
-     * @Author 小莫
-     * @Date 17:20 2019/03/24
      * @Param [shippingId, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -215,8 +205,6 @@ public class OrderController {
 
     /**
      *功能描述: 没有立即支付，则进入展示订单详情页面
-     * @Author 小莫
-     * @Date 0:02 2019/03/26
      * @Param [session, model]
      * @return java.lang.String
      */
@@ -239,8 +227,6 @@ public class OrderController {
 
     /**
      *功能描述: 客户所有订单页面，点击订单号可以查看详情
-     * @Author 小莫
-     * @Date 20:27 2019/03/26
      * @Param [session, orderNo, model]
      * @return java.lang.String
      */
@@ -262,8 +248,6 @@ public class OrderController {
 
     /**
      *功能描述: 取消订单
-     * @Author 小莫
-     * @Date 12:03 2019/03/29
      * @Param [orderId, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -286,8 +270,6 @@ public class OrderController {
 
     /**
      *功能描述: 删除订单
-     * @Author 小莫
-     * @Date 8:54 2019/03/30
      * @Param [removeOrderId, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -306,8 +288,6 @@ public class OrderController {
 
     /**
      *功能描述: 确认收货
-     * @Author 小莫
-     * @Date 9:44 2019/03/30
      * @Param [confirmOrderId, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -327,8 +307,6 @@ public class OrderController {
 
     /**
      *功能描述: 展示没有支付的订单列表
-     * @Author 小莫
-     * @Date 12:14 2019/03/30
      * @Param [session, model]
      * @return java.lang.String
      */
@@ -347,8 +325,6 @@ public class OrderController {
 
     /**
      *功能描述: 展示没有发货的订单列表
-     * @Author 小莫
-     * @Date 12:14 2019/03/30
      * @Param [session, model]
      * @return java.lang.String
      */
@@ -367,8 +343,6 @@ public class OrderController {
 
     /**
      *功能描述: 展示位收货的订单列表
-     * @Author 小莫
-     * @Date 12:15 2019/03/30
      * @Param [session, model]
      * @return java.lang.String
      */
@@ -387,8 +361,6 @@ public class OrderController {
 
     /**
      *功能描述: 展示已完成交易的订单列表
-     * @Author 小莫
-     * @Date 12:15 2019/03/30
      * @Param [session, model]
      * @return java.lang.String
      */
@@ -407,8 +379,6 @@ public class OrderController {
 
     /**
      *功能描述: 展示已经取消的订单列表
-     * @Author 小莫
-     * @Date 12:15 2019/03/30
      * @Param [session, model]
      * @return java.lang.String
      */
@@ -427,8 +397,6 @@ public class OrderController {
 
     /**
      *功能描述: 展示回收站的订单列表
-     * @Author 小莫
-     * @Date 12:15 2019/03/30
      * @Param [session, model]
      * @return java.lang.String
      */
@@ -447,8 +415,6 @@ public class OrderController {
 
     /**
      *功能描述: 跳转到支付页面
-     * @Author 小莫
-     * @Date 11:29 2019/04/02
      * @Param [orderNumber, session]
      * @return java.lang.String
      */
@@ -465,8 +431,6 @@ public class OrderController {
 
     /**
      *功能描述: 点击直接购买，先将物品放入购物车中
-     * @Author 小莫
-     * @Date 10:44 2019/04/03
      * @Param [count, price, product, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -501,8 +465,6 @@ public class OrderController {
 
     /**
      *功能描述: 直接购买，进入订单确认页面
-     * @Author 小莫
-     * @Date 11:37 2019/04/03
      * @Param [cartId, session, model]
      * @return java.lang.String
      */

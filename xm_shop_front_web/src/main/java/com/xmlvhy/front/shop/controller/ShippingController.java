@@ -19,8 +19,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Author: 小莫
- * Date: 2019-03-23 10:37
  * Description: 收货地址相关的接口
  */
 @Controller
@@ -34,8 +32,6 @@ public class ShippingController {
      * 功能描述: 添加收货地址
      *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 11:54 2019/03/23
      * @Param [shippingVo, session, model]
      */
     @RequestMapping("saveShipping")
@@ -58,8 +54,6 @@ public class ShippingController {
      * 功能描述: 获取客户所有的收货地址
      *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 12:12 2019/03/23
      * @Param [session, model]
      */
     @RequestMapping("findAllShippings")
@@ -79,8 +73,6 @@ public class ShippingController {
      * 功能描述: 省份校验，校验是否已经选择过省份，默认值是省份
      *
      * @return java.util.Map<java.lang.String       ,       java.lang.Object>
-     * @Author 小莫
-     * @Date 18:27 2019/03/23
      * @Param [receiverProvince]
      */
     @RequestMapping("checkProvince")
@@ -100,8 +92,6 @@ public class ShippingController {
      * 功能描述: 城市校验
      *
      * @return java.util.Map<java.lang.String       ,       java.lang.Object>
-     * @Author 小莫
-     * @Date 18:32 2019/03/23
      * @Param [receiverCity]
      */
     @RequestMapping("checkCity")
@@ -119,10 +109,7 @@ public class ShippingController {
 
     /**
      * 功能描述: 区县校验
-     *
      * @return java.util.Map<java.lang.String       ,       java.lang.Object>
-     * @Author 小莫
-     * @Date 18:32 2019/03/23
      * @Param [receiverDistrict]
      */
     @RequestMapping("checkDistrict")
@@ -140,10 +127,7 @@ public class ShippingController {
 
     /**
      * 功能描述: 移除地址卡片
-     *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 21:34 2019/03/23
      * @Param [shippingId, session]
      */
     @RequestMapping("removeShipping")
@@ -161,8 +145,6 @@ public class ShippingController {
 
     /**
      *功能描述: 显示某一条地址详情
-     * @Author 小莫
-     * @Date 22:43 2019/03/23
      * @Param [shippingId, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -183,8 +165,6 @@ public class ShippingController {
 
     /**
      *功能描述: 修改地址
-     * @Author 小莫
-     * @Date 10:05 2019/03/24
      * @Param [shippingVo, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */

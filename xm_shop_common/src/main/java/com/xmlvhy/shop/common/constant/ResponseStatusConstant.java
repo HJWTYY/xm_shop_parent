@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.constant;
 
 /**
- * Author: 小莫
- * Date: 2019-03-09 20:35
  * Description: 响应客户端请求数据常量
  */
 public interface ResponseStatusConstant {

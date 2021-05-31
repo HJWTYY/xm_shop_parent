@@ -7,8 +7,6 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-11 9:56
  * Description:<描述>
  */
 public interface SystemUserDao {

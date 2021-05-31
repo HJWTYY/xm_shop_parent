@@ -15,8 +15,6 @@ import java.util.Map;
 import java.util.Random;
 
 /**
- * Author: 小莫
- * Date: 2019-03-12 20:51
  * Description: 短信接口
  */
 @Controller

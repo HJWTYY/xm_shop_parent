@@ -21,8 +21,6 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-12 17:33
  * Description:<描述>
  */
 @Service
@@ -34,8 +32,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     /**
      *功能描述: 用户登录
-     * @Author 小莫
-     * @Date 11:21 2019/03/13
      * @Param [loginName, password]
      * @return com.xmlvhy.shop.pojo.Customer
      */
@@ -51,8 +47,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     /**
      *功能描述: 手机验证码快速登录
-     * @Author 小莫
-     * @Date 11:20 2019/03/13
      * @Param [phone]
      * @return com.xmlvhy.shop.pojo.Customer
      */
@@ -68,8 +62,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     /**
      *功能描述: 用户注册
-     * @Author 小莫
-     * @Date 11:20 2019/03/13
      * @Param [customerVo]
      * @return java.lang.Boolean
      */
@@ -91,8 +83,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     /**
      *功能描述: 用户修改密码
-     * @Author 小莫
-     * @Date 15:01 2019/03/13
      * @Param [newpassword]
      * @return java.lang.Boolean
      */
@@ -107,8 +97,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     /**
      *功能描述: 根据用户登录名查找用户,可用返回true
-     * @Author 小莫
-     * @Date 17:14 2019/03/13
      * @Param [loginName]
      * @return com.xmlvhy.shop.pojo.Customer
      */
@@ -124,8 +112,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     /**
      *功能描述: 获取所有的用户列表
-     * @Author 小莫
-     * @Date 21:00 2019/03/13
      * @Param []
      * @return java.util.List<com.xmlvhy.shop.pojo.Customer>
      */
@@ -142,8 +128,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     /**
      *功能描述: 根据 id 用户信息
-     * @Author 小莫
-     * @Date 10:47 2019/03/14
      * @Param [id]
      * @return com.xmlvhy.shop.pojo.Customer
      */
@@ -159,8 +143,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     /**
      *功能描述: 修改客户的信息
-     * @Author 小莫
-     * @Date 11:18 2019/03/14
      * @Param [customerVo]
      * @return java.lang.Boolean
      */
@@ -178,8 +160,6 @@ public class CustomerServiceImpl implements CustomerService{
 
     /**
      *功能描述: 修改客户的状态
-     * @Author 小莫
-     * @Date 13:46 2019/03/14
      * @Param [id]
      * @return java.lang.Boolean
      */

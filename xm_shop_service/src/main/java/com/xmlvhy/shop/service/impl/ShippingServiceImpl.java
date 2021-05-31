@@ -29,8 +29,6 @@ public class ShippingServiceImpl implements ShippingService {
 
     /**
      *功能描述: 查找某个用户的某个收货地址
-     * @Author 小莫
-     * @Date 12:03 2019/03/23
      * @Param [customerId, shippingId]
      * @return com.xmlvhy.shop.pojo.Shipping
      */
@@ -46,8 +44,6 @@ public class ShippingServiceImpl implements ShippingService {
 
     /**
      *功能描述: 查询用户的所有收货地址
-     * @Author 小莫
-     * @Date 12:06 2019/03/23
      * @Param [customerId]
      * @return java.util.List<com.xmlvhy.shop.pojo.Shipping>
      */
@@ -62,9 +58,7 @@ public class ShippingServiceImpl implements ShippingService {
     }
 
     /**
-     *功能描述: 保存收货地址
-     * @Author 小莫
-     * @Date 11:51 2019/03/23
+     *功能描述: 保存收货地址3
      * @Param [shippingVo, customerId]
      * @return int 地址id
      */
@@ -90,8 +84,6 @@ public class ShippingServiceImpl implements ShippingService {
 
     /**
      *功能描述: 修改地址信息
-     * @Author 小莫
-     * @Date 10:04 2019/03/24
      * @Param [shippingVo, customerId]
      * @return java.lang.Boolean
      */
@@ -115,8 +107,6 @@ public class ShippingServiceImpl implements ShippingService {
 
     /**
      *功能描述: 删除一个地址信息，这里实际上不删除，改变一下地址状态为status 0
-     * @Author 小莫
-     * @Date 21:26 2019/03/23
      * @Param [shippingId, customerId]
      * @return java.lang.Boolean
      */

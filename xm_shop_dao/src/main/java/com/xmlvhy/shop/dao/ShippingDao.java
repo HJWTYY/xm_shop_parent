@@ -7,8 +7,6 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-23 11:39
  * Description:<描述>
  */
 public interface ShippingDao {

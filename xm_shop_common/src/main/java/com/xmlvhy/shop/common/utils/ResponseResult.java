@@ -6,8 +6,6 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * Author: 小莫
- * Date: 2019-03-09 20:31
  * Description: 响应数据封装类
  */
 @Data

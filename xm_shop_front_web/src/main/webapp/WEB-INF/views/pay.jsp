@@ -130,7 +130,7 @@
                     <p>
                         <%--TODO:商品名称--%>
                         <span class="des-label">商品名称：</span>
-                        <span>小莫水果</span>
+                        <span>月季花2等</span>
                     </p>
                     <p>
                         <span class="des-label">支付金额：</span>

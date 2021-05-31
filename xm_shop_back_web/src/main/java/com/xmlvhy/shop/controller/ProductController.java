@@ -26,7 +26,6 @@ import java.util.List;
 import java.util.Map;
 
 /**
- * Author: 小莫
  * Date: 2019-03-10 8:43
  * Description: 商品管理接口
  */
@@ -44,7 +43,6 @@ public class ProductController {
      * 功能描述: 页面数据初始化，所有方法执行前执行，将所有启用的商品类型先拿到
      *
      * @return java.util.List<com.xmlvhy.shop.pojo.ProductType>
-     * @Author 小莫
      * @Date 8:56 2019/03/10
      * @Param []
      */
@@ -56,7 +54,6 @@ public class ProductController {
 
     /**
      *功能描述: 获取所有商品列表
-     * @Author 小莫
      * @Date 22:59 2019/03/10
      * @Param [pageNum, model]
      * @return java.lang.String
@@ -78,7 +75,6 @@ public class ProductController {
 
     /**
      *功能描述: 添加商品
-     * @Author 小莫
      * @Date 23:00 2019/03/10
      * @Param [productVo, pageNum, session, model]
      * @return java.lang.String
@@ -125,8 +121,6 @@ public class ProductController {
 
     /**
      *功能描述: 前端校验 商品名称是否存在接口
-     * @Author 小莫
-     * @Date 23:03 2019/03/10
      * @Param [name, model]
      * @return java.util.Map<java.lang.String,java.lang.Object>
      */
@@ -146,8 +140,6 @@ public class ProductController {
 
     /**
      *功能描述: 通过 id 获取商品信息
-     * @Author 小莫
-     * @Date 23:04 2019/03/10
      * @Param [id]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -164,9 +156,8 @@ public class ProductController {
 
     /**
      *功能描述: 获取图片，修改商品信息预览图片显示
-     * @Author 小莫
-     * @Date 23:05 2019/03/10
-     * @Param [path, outputStream]
+     * @Date 23:05 2019/03/1
+     * * @Param [path, outputStream]
      * @return void
      */
     @RequestMapping("getImage")
@@ -177,7 +168,6 @@ public class ProductController {
 
     /**
      *功能描述: 修改商品信息，内容跟添加商品信息差不多
-     * @Author 小莫
      * @Date 23:05 2019/03/10
      * @Param [productVo, pageNum, session, model]
      * @return java.lang.String
@@ -219,7 +209,6 @@ public class ProductController {
 
     /**
      *功能描述: 根据 id 删除商品的信息
-     * @Author 小莫
      * @Date 23:08 2019/03/10
      * @Param [id]
      * @return com.xmlvhy.shop.common.utils.ResponseResult

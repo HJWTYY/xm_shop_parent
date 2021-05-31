@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * Author: 小莫
- * Date: 2019-03-11 13:45
  * Description: 查询的系统用户的条件参数
  */
 @Data

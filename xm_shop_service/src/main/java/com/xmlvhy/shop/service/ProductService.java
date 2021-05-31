@@ -9,8 +9,7 @@ import java.io.OutputStream;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-10 9:41
+
  * Description: 商品业务层接口
  */
 public interface ProductService {
@@ -47,8 +46,6 @@ public interface ProductService {
 
     /**
      *功能描述: 将图片响应到输出流中，即显示图片预览
-     * @Author 小莫
-     * @Date 21:25 2019/03/10
      * @Param [path, outputStream]
      * @return void
      */

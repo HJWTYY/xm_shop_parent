@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * Author: 小莫
- * Date: 2019-03-12 14:18
  * Description: 前台商品查询条件封装类
  */
 @Data

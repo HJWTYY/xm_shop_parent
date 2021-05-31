@@ -92,7 +92,7 @@
                     <tr>
                         <td>${orderItem.id}</td>
                         <td><span style="cursor: pointer" onclick="showProductFromOrder(${orderItem.product.id})">${orderItem.product.name}</span></td>
-                        <td><img src="${orderItem.product.image}" alt="" width="60" height="60" style="cursor: pointer" onclick="showProductFromOrder(${orderItem.product.id})"></td>
+                        <td><img src="/images/${orderItem.product.image}" alt="" width="60" height="60" style="cursor: pointer" onclick="showProductFromOrder(${orderItem.product.id})"></td>
                         <td>${orderItem.num}</td>
                         <td>${orderItem.price}</td>
                     </tr>

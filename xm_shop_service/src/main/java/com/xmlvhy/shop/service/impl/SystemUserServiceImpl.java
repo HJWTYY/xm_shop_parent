@@ -18,8 +18,6 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-11 10:30
  * Description: 系统用户管理业务
  */
 @Service
@@ -31,8 +29,6 @@ public class SystemUserServiceImpl implements SystemUserService {
 
     /**
      *功能描述: 查询所有系统用户
-     * @Author 小莫
-     * @Date 10:32 2019/03/11
      * @Param []
      * @return java.util.List<com.xmlvhy.shop.pojo.SystemUser>
      */
@@ -44,8 +40,6 @@ public class SystemUserServiceImpl implements SystemUserService {
 
     /**
      *功能描述: 根据 id查询某一具体系统用户信息
-     * @Author 小莫
-     * @Date 10:32 2019/03/11
      * @Param [id]
      * @return com.xmlvhy.shop.pojo.SystemUser
      */
@@ -57,8 +51,6 @@ public class SystemUserServiceImpl implements SystemUserService {
 
     /**
      *功能描述: 插入一条系统用户信息
-     * @Author 小莫
-     * @Date 10:32 2019/03/11
      * @Param [systemUser]
      * @return int
      */
@@ -83,8 +75,6 @@ public class SystemUserServiceImpl implements SystemUserService {
 
     /**
      *功能描述: 修改系统用户信息
-     * @Author 小莫
-     * @Date 17:46 2019/03/11
      * @Param [systemUserVo]
      * @return int
      */
@@ -105,8 +95,6 @@ public class SystemUserServiceImpl implements SystemUserService {
 
     /**
      *功能描述: 启用 禁用系统用户状态
-     * @Author 小莫
-     * @Date 17:47 2019/03/11
      * @Param [id]
      * @return int
      */
@@ -127,8 +115,6 @@ public class SystemUserServiceImpl implements SystemUserService {
 
     /**
      *功能描述: 多条件查询系统用户列表
-     * @Author 小莫
-     * @Date 17:47 2019/03/11
      * @Param [systemUserParam]
      * @return java.util.List<com.xmlvhy.shop.pojo.SystemUser>
      */
@@ -140,8 +126,6 @@ public class SystemUserServiceImpl implements SystemUserService {
 
     /**
      *功能描述: 查询登录名是否可用
-     * @Author 小莫
-     * @Date 20:18 2019/03/11
      * @Param [loginName]
      * @return com.xmlvhy.shop.pojo.SystemUser
      */
@@ -152,8 +136,6 @@ public class SystemUserServiceImpl implements SystemUserService {
 
     /**
      *功能描述: 实现登录功能
-     * @Author 小莫
-     * @Date 11:35 2019/03/12
      * @Param [loginName, password]
      * @return com.xmlvhy.shop.pojo.SystemUser
      */

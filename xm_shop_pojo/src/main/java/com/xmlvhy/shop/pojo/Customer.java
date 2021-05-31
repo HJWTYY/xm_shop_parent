@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 import java.util.Date;
 
 /**
- * Author: 小莫
- * Date: 2019-03-12 17:27
  * Description: 客户实体类
  */
 @Data

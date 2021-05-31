@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.exception;
 
 /**
- * Author: 小莫
- * Date: 2019-03-13 17:20
  * Description: 用户账户名校验自定义异常
  */
 public class CustomerLoginNameIsExist extends RuntimeException{

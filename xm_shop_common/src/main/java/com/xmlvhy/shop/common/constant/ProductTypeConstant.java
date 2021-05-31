@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.constant;
 
 /**
- * Author: 小莫
- * Date: 2019-03-09 20:24
  * Description:商品类型常量
  */
 public interface ProductTypeConstant {

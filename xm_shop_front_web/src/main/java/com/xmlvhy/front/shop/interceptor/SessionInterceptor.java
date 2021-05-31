@@ -7,8 +7,6 @@ import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
 /**
- * Author: 小莫
- * Date: 2019-03-26 21:15
  * Description: session 拦截器
  */
 public class SessionInterceptor implements HandlerInterceptor {

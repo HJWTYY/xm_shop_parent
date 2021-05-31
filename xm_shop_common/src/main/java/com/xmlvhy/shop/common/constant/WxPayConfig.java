@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.constant;
 
 /**
- * Author: 小莫
- * Date: 2019-04-03 14:17
  * Description: 微信支付配置类
  */
 public class WxPayConfig {

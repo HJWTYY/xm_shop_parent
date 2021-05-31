@@ -9,9 +9,7 @@ import lombok.NoArgsConstructor;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-24 16:44
- * Description:
+ * Description:订单类目
  */
 @Data
 @NoArgsConstructor

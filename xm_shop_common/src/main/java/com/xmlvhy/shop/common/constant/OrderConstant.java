@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.constant;
 
 /**
- * Author: 小莫
- * Date: 2019-03-24 15:09
  * Description: 订单常量
  */
 public interface OrderConstant {

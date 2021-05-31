@@ -23,8 +23,6 @@ import java.util.Date;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-10 10:18
  * Description:  商品业务层接口实现
  */
 @Service
@@ -57,8 +55,6 @@ public class ProductServiceImpl implements ProductService {
 
     /**
      *功能描述: 添加商品
-     * @Author 小莫
-     * @Date 20:24 2019/03/14
      * @Param [productDto]
      * @return int
      */
@@ -105,8 +101,6 @@ public class ProductServiceImpl implements ProductService {
 
     /**
      *功能描述: 检测商品名称是否可用
-     * @Author 小莫
-     * @Date 14:39 2019/03/10
      * @Param [name]
      * @return java.lang.Boolean true表示可用， false表示不可用
      */
@@ -123,8 +117,6 @@ public class ProductServiceImpl implements ProductService {
 
     /**
      *功能描述: 查找所有商品
-     * @Author 小莫
-     * @Date 20:25 2019/03/14
      * @Param []
      * @return java.util.List<com.xmlvhy.shop.pojo.Product>
      */
@@ -136,8 +128,6 @@ public class ProductServiceImpl implements ProductService {
 
     /**
      *功能描述: 根据 id 查找商品
-     * @Author 小莫
-     * @Date 20:25 2019/03/14
      * @Param [id]
      * @return com.xmlvhy.shop.pojo.Product
      */
@@ -149,8 +139,6 @@ public class ProductServiceImpl implements ProductService {
 
     /**
      *功能描述: 修改商品
-     * @Author 小莫
-     * @Date 20:25 2019/03/14
      * @Param [productDto]
      * @return int
      */
@@ -192,8 +180,6 @@ public class ProductServiceImpl implements ProductService {
 
     /**
      *功能描述: 删除商品
-     * @Author 小莫
-     * @Date 20:25 2019/03/14
      * @Param [id]
      * @return int
      */
@@ -204,8 +190,6 @@ public class ProductServiceImpl implements ProductService {
 
     /**
      *功能描述: 获取图片，将图片响应到输出流中，显示图片
-     * @Author 小莫
-     * @Date 21:27 2019/03/10
      * @Param [path, outputStream]
      * @return void
      */
@@ -220,8 +204,6 @@ public class ProductServiceImpl implements ProductService {
 
     /**
      *功能描述: 多条件查找商品
-     * @Author 小莫
-     * @Date 20:26 2019/03/14
      * @Param [productParam]
      * @return java.util.List<com.xmlvhy.shop.pojo.Product>
      */

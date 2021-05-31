@@ -7,8 +7,6 @@ import lombok.NoArgsConstructor;
 import java.io.Serializable;
 
 /**
- * Author: 小莫
- * Date: 2019-03-13 21:24
  * Description: 客户信息条件实体类
  */
 @Data

@@ -18,8 +18,6 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-12 13:42
  * Description: 前台商品接口
  */
 @Controller
@@ -34,8 +32,6 @@ public class ProductController {
 
     /**
      *功能描述: 加载所有商品列表
-     * @Author 小莫
-     * @Date 9:47 2019/03/14
      * @Param [productParam, pageName, model]
      * @return java.lang.String
      */
@@ -53,8 +49,6 @@ public class ProductController {
 
     /**
      *功能描述: 页面初始化
-     * @Author 小莫
-     * @Date 9:47 2019/03/14
      * @Param []
      * @return java.util.List<com.xmlvhy.shop.pojo.ProductType>
      */
@@ -66,8 +60,6 @@ public class ProductController {
 
     /**
      *功能描述: 展示商品详情
-     * @Author 小莫
-     * @Date 14:46 2019/03/19
      * @Param [model, id]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */

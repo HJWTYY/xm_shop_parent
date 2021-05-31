@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.constant;
 
 /**
- * Author: 小莫
- * Date: 2019-03-12 17:52
  * Description: 客户相关常量类
  */
 public interface CustomerConstant {

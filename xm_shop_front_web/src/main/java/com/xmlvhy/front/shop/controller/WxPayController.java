@@ -27,8 +27,6 @@ import java.util.SortedMap;
 import java.util.TreeMap;
 
 /**
- * Author: 小莫
- * Date: 2019-04-03 14:17
  * Description: 微信支付相关接口
  */
 @RequestMapping("/front/wxPay")
@@ -108,10 +106,7 @@ public class WxPayController {
 
     /**
      * 功能描述: 微信支付回调接口
-     *
      * @return void
-     * @Author 小莫
-     * @Date 15:47 2019/04/03
      * @Param [request, response]
      */
     @RequestMapping("callback")
@@ -214,10 +209,7 @@ public class WxPayController {
 
     /**
      * 功能描述: 显示微信支付二维码
-     *
      * @return void
-     * @Author 小莫
-     * @Date 16:57 2019/04/04
      * @Param [response, request]
      */
     @RequestMapping("showPayQRCode")
@@ -230,8 +222,6 @@ public class WxPayController {
 
     /**
      *功能描述: 检测结算订单的状态
-     * @Author 小莫
-     * @Date 18:04 2019/04/04
      * @Param [orderNumber, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -252,8 +242,6 @@ public class WxPayController {
 
     /**
      *功能描述: 微信支付成功跳转
-     * @Author 小莫
-     * @Date 18:13 2019/04/04
      * @Param [orderNumber, session]
      * @return org.springframework.web.servlet.ModelAndView
      */
@@ -272,7 +260,7 @@ public class WxPayController {
         mv.addObject("orderNumber", order.getOrderNumber());
         mv.addObject("trade_no", transactionId);
         mv.addObject("price", order.getPrice());
-        mv.addObject("productName", "小莫水果");
+        mv.addObject("productName", "鲜花商城");
 
         return mv;
     }

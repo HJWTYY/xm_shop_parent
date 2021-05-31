@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.constant;
 
 /**
- * Author: 小莫
- * Date: 2019-03-20 19:10
  * Description:<描述>
  */
 public interface CartConstant {

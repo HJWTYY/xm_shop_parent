@@ -18,8 +18,6 @@ import javax.servlet.http.HttpSession;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-13 0:24
  * Description:<描述>
  */
 @Controller
@@ -35,10 +33,7 @@ public class CarController {
 
     /**
      * 功能描述: 清空购物车后展示此页面
-     *
      * @return java.lang.String
-     * @Author 小莫
-     * @Date 19:50 2019/03/20
      * @Param []
      */
     @RequestMapping("showEmptyCart")
@@ -48,10 +43,7 @@ public class CarController {
 
     /**
      * 功能描述: 购物车展示
-     *
      * @return java.lang.String
-     * @Author 小莫
-     * @Date 21:14 2019/03/19
      * @Param [session, model]
      */
     @RequestMapping("myCarts")
@@ -66,10 +58,7 @@ public class CarController {
 
     /**
      * 功能描述: 添加商品到购物车
-     *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 16:02 2019/03/19
      * @Param [id, session]
      */
     @RequestMapping("addToCart")
@@ -100,8 +89,6 @@ public class CarController {
      * 功能描述: 清空购物车操作
      *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 19:24 2019/03/20
      * @Param [session]
      */
     @RequestMapping("clearAllProductFromCart")
@@ -124,8 +111,6 @@ public class CarController {
      * 功能描述: 从购物车中移除某一商品
      *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 10:49 2019/03/21
      * @Param [cartId, session]
      */
     @RequestMapping("removeOneProduct")
@@ -145,8 +130,6 @@ public class CarController {
      * 功能描述: 从购物车中移除选中的商品
      *
      * @return com.xmlvhy.shop.common.utils.ResponseResult
-     * @Author 小莫
-     * @Date 11:49 2019/03/21
      * @Param [cartIds, session]
      */
     @RequestMapping("removeMoreProductFromCart")
@@ -164,8 +147,6 @@ public class CarController {
 
     /**
      *功能描述: 购物车页面修改商品的数量
-     * @Author 小莫
-     * @Date 17:15 2019/03/21
      * @Param [cartId, productNum, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -184,8 +165,6 @@ public class CarController {
 
     /**
      *功能描述: 临时将前端发送过来的数据存到 session中去
-     * @Author 小莫
-     * @Date 11:48 2019/03/22
      * @Param [count, price, orderCartIds, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */

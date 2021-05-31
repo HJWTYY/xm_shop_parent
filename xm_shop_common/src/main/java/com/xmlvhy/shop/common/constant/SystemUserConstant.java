@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.constant;
 
 /**
- * Author: 小莫
- * Date: 2019-03-11 13:05
  * Description: 系统用户管理常量
  */
 public interface SystemUserConstant {

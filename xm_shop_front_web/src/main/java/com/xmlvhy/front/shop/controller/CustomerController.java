@@ -21,8 +21,6 @@ import java.util.HashMap;
 import java.util.Map;
 
 /**
- * Author: 小莫
- * Date: 2019-03-12 17:24
  * Description: 客户相关的接口
  */
 @Controller
@@ -34,8 +32,6 @@ public class CustomerController {
 
     /**
      *功能描述: 通过账户名密码登录
-     * @Author 小莫
-     * @Date 9:45 2019/03/14
      * @Param [loginName, password, session, model]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -57,8 +53,6 @@ public class CustomerController {
 
     /**
      *功能描述: 退出登录
-     * @Author 小莫
-     * @Date 19:40 2019/03/12
      * @Param [session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -72,8 +66,6 @@ public class CustomerController {
 
     /**
      *功能描述: 通过短信快捷登录
-     * @Author 小莫
-     * @Date 9:45 2019/03/14
      * @Param [phone, verifyCode, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -109,8 +101,6 @@ public class CustomerController {
 
     /**
      *功能描述: 用户注册
-     * @Author 小莫
-     * @Date 9:46 2019/03/14
      * @Param [customerVo, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -135,8 +125,6 @@ public class CustomerController {
 
     /**
      *功能描述: 校验原始密码是否存在
-     * @Author 小莫
-     * @Date 14:47 2019/03/13
      * @Param [password, session]
      * @return java.util.Map<java.lang.String,java.lang.Object>
      */
@@ -160,8 +148,6 @@ public class CustomerController {
 
     /**
      *功能描述: 修改密码
-     * @Author 小莫
-     * @Date 14:47 2019/03/13
      * @Param []
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -194,8 +180,6 @@ public class CustomerController {
 
     /**
      *功能描述: 校验用户登录名是否存在，登录名是唯一的
-     * @Author 小莫
-     * @Date 17:13 2019/03/13
      * @Param [loginName]
      * @return java.util.Map<java.lang.String,java.lang.Object>
      */
@@ -220,8 +204,6 @@ public class CustomerController {
     //TODO:个人中心模块
     /**
      *功能描述: 展示用户个人中心
-     * @Author 小莫
-     * @Date 9:46 2019/03/14
      * @Param []
      * @return java.lang.String
      */
@@ -239,8 +221,6 @@ public class CustomerController {
 
     /**
      *功能描述: session 超时
-     * @Author 小莫
-     * @Date 10:14 2019/04/02
      * @Param [attributes]
      * @return java.lang.String
      */
@@ -252,8 +232,6 @@ public class CustomerController {
 
     /**
      *功能描述: 个人中心修改信息
-     * @Author 小莫
-     * @Date 10:14 2019/04/02
      * @Param [customerId, mobile, address, session]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */

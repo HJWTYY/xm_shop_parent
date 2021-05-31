@@ -6,8 +6,6 @@ import com.xmlvhy.shop.vo.CartVo;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-19 16:06
  * Description:购物车业务接口
  */
 public interface CartService {

@@ -13,8 +13,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-09 11:36
  * Description:商品类型业务实现类
  */
 @Service

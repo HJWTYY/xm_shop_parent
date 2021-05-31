@@ -34,8 +34,6 @@ public class ProductTypeManagerController {
 
     /**
      *功能描述: 查询所有商品类型类表
-     * @Author 小莫
-     * @Date 21:33 2019/03/11
      * @Param [pageNum, model] 分页查询，默认第一页，每一页5条数据
      * @return java.lang.String
      */
@@ -62,8 +60,6 @@ public class ProductTypeManagerController {
 
     /**
      *功能描述: 添加商品类型
-     * @Author 小莫
-     * @Date 21:33 2019/03/11
      * @Param [name]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */

@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.constant;
 
 /**
- * Author: 小莫
- * Date: 2019-03-09 12:46
  * Description: 分页插件常量
  */
 public interface PaginationConstant {

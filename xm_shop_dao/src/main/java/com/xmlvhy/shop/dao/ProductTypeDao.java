@@ -6,8 +6,6 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-09 10:56
  * Description:商品类型dao层接口
  */
 public interface ProductTypeDao {

@@ -25,8 +25,6 @@ public class VerifyCodeController {
 
     /**
      *功能描述: 获取验证码图片
-     * @Author 小莫
-     * @Date 9:53 2019/03/12
      * @Param [request, response]
      * @return void
      */

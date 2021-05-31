@@ -7,8 +7,6 @@ import com.xmlvhy.shop.vo.CustomerVo;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-12 17:26
  * Description: 客户相关业务接口
  */
 public interface CustomerService {

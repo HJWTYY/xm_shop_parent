@@ -1,8 +1,6 @@
 package com.xmlvhy.front.shop.config;
 
 /**
- * Author: 小莫
- * Date: 2019-04-02 14:35
  * Description:<描述>
  */
 public class AliPayConfig {

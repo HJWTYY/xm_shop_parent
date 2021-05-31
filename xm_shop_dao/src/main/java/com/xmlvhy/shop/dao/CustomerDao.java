@@ -7,8 +7,6 @@ import org.apache.ibatis.annotations.Param;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-12 17:34
  * Description: 客户dao 层
  */
 public interface CustomerDao {

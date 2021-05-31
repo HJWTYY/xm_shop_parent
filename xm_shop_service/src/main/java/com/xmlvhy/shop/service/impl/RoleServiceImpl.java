@@ -11,8 +11,6 @@ import org.springframework.transaction.annotation.Transactional;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-11 11:33
  * Description:角色业务层实现
  */
 @Service

@@ -5,9 +5,7 @@ import lombok.Data;
 import lombok.NoArgsConstructor;
 
 /**
- * Author: 小莫
- * Date: 2019-03-19 16:43
- * Description:<描述>
+ * Description:购物车
  */
 @Data
 @AllArgsConstructor

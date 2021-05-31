@@ -1,8 +1,6 @@
 package com.xmlvhy.shop.common.constant;
 
 /**
- * Author: 小莫
- * Date: 2019-03-23 11:37
  * Description:<描述>
  */
 public interface ShippingConstant {

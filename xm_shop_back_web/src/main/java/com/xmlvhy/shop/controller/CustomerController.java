@@ -19,8 +19,6 @@ import org.springframework.web.bind.annotation.ResponseBody;
 import java.util.List;
 
 /**
- * Author: 小莫
- * Date: 2019-03-11 21:51
  * Description: 客户相关接口
  */
 @Controller
@@ -32,8 +30,6 @@ public class CustomerController {
 
     /**
      *功能描述: 获取所有的用户信息
-     * @Author 小莫
-     * @Date 11:11 2019/03/14
      * @Param [pageNum, model]
      * @return java.lang.String
      */
@@ -52,8 +48,6 @@ public class CustomerController {
 
     /**
      *功能描述: 通过多条件查询获取获取用户信息
-     * @Author 小莫
-     * @Date 11:11 2019/03/14
      * @Param [customerParam, pageNum, model]
      * @return java.lang.String
      */
@@ -73,8 +67,6 @@ public class CustomerController {
 
     /**
      *功能描述: 展示一个用户的信息
-     * @Author 小莫
-     * @Date 11:11 2019/03/14
      * @Param [id]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
@@ -91,8 +83,6 @@ public class CustomerController {
 
     /**
      *功能描述: 修改客户信息
-     * @Author 小莫
-     * @Date 13:55 2019/03/14
      * @Param [customerVo, pageNum, model]
      * @return java.lang.String
      */
@@ -111,8 +101,6 @@ public class CustomerController {
 
     /**
      *功能描述: 禁用启用客户账户
-     * @Author 小莫
-     * @Date 13:56 2019/03/14
      * @Param [id]
      * @return com.xmlvhy.shop.common.utils.ResponseResult
      */
