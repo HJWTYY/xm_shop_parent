@@ -50,7 +50,9 @@
             }
         }
     </script>
-
+    <%
+        String path = System.getProperty("user.dir");
+    %>
 </head>
 
 <body class="animated fadeIn">
@@ -103,7 +105,7 @@
                         <td>${cart.id}</td>
                         <td>${cart.product.name}</td>
                         <td>
-                            <img src="/images/${cart.product.image}" alt="" width="60" height="60">
+                            <img src="/upload/images/${cart.product.image}" alt="" width="60" height="60">
                         </td>
                         <td>
                             <span class="price">${cart.product.price}</span>

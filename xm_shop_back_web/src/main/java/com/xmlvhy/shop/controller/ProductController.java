@@ -10,16 +10,19 @@ import com.xmlvhy.shop.pojo.ProductType;
 import com.xmlvhy.shop.service.ProductService;
 import com.xmlvhy.shop.service.ProductTypeService;
 import com.xmlvhy.shop.vo.ProductVo;
+import org.apache.commons.beanutils.PropertyUtils;
 import org.springframework.beans.BeanUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.ObjectUtils;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
+import java.io.FileNotFoundException;
 import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.List;
@@ -81,27 +84,15 @@ public class ProductController {
      */
     @RequestMapping("addProduct")
     public String addProduct(ProductVo productVo, Integer pageNum, HttpSession session, Model model){
-        //TODO:通过session拿到上传文件的实际路径，这里注释：原因修改为上传到ftp服务器上，
-        //TODO: 图片路径修为可以通过 http访问的
-        //String uploadPath = session.getServletContext().getRealPath("/WEB-INF/upload");
-
-        //TODO:CommonsMultipartFile 文件上传
-        /*最好不要直接把web层的 CommonsMultipartFile 对象传给service,这样就会出现 service 层
-        调用web层了，需要避免耦合，所以要封装 dto 类，专门用于数据传输封装*/
-
+        String uploadPath = System.getProperty("user.dir")+"/images";
         try {
-            //把Vo 转化为 dto传给 service
             ProductDto productDto = new ProductDto();
 
-            //todo:使用 commons-beanutils工具类拷贝属性
-            //PropertyUtils.copyProperties(productVo,productDto);
-
-            //todo:使用 spring BeanUtils属性拷贝
-            BeanUtils.copyProperties(productVo, productDto); //对象间属性的拷贝，可以将两个对象之间相同的属性拷贝
+            BeanUtils.copyProperties(productVo, productDto);
             productDto.setInputStream(productVo.getFile().getInputStream());
             productDto.setFileName(productVo.getFile().getOriginalFilename());
 
-            //productDto.setUploadPath(uploadPath);
+            productDto.setUploadPath(uploadPath);
 
             //将数据保存到数据库中
             int rows = productService.addProduct(productDto);
@@ -173,9 +164,9 @@ public class ProductController {
      * @return java.lang.String
      */
     @RequestMapping("modifyProduct")
-    public String modifyProduct(ProductVo productVo, Integer pageNum, HttpSession session, Model model)  {
+    public String modifyProduct(ProductVo productVo, Integer pageNum, HttpSession session, Model model) throws FileNotFoundException {
         //TODO:通过session拿到上传文件的实际路径 : 注释： 修改上传路径为我的云服务器
-        //String uploadPath = session.getServletContext().getRealPath("/WEB-INF/upload");
+        String uploadPath = System.getProperty("user.dir")+"/images";
         //TODO:CommonsMultipartFile 文件上传
         /*最好不要直接把web层的 CommonsMultipartFile 对象传给service,这样就会出现 service 层
         调用web层了，需要避免耦合，所以要封装 dto 类，专门用于数据传输封装*/
@@ -191,7 +182,7 @@ public class ProductController {
             BeanUtils.copyProperties(productVo, productDto); //对象间属性的拷贝，可以将两个对象之间相同的属性拷贝
             productDto.setInputStream(productVo.getFile().getInputStream());
             productDto.setFileName(productVo.getFile().getOriginalFilename());
-            //productDto.setUploadPath(uploadPath);
+            productDto.setUploadPath(uploadPath);
 
             //更新数据
             int rows = productService.modifyProduct(productDto);

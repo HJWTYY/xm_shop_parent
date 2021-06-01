@@ -17,6 +17,7 @@
     <script src="${pageContext.request.contextPath}/js/zshop.js"></script>
     <title>商品详情页</title>
 
+
     <script>
         $(function () {
             var t = $('#text_box');
@@ -134,7 +135,7 @@
     <div class="container">
         <div class="col-sm-6" style="padding: 0">
             <div class="imgShow">
-                <img style="width: 400px;height: 400px" src="${pageContext.request.contextPath}/images/${product.image}" alt="">
+                <img style="width: 400px;height: 400px" src="/upload/images/${product.image}" alt="">
             </div>
         </div>
         <div class="col-sm-6">

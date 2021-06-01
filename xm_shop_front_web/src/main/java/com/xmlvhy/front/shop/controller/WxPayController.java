@@ -56,6 +56,7 @@ public class WxPayController {
             //payUrl = orderService.getWxPayUrl(order, ip);
             //log.info("payUrl= {}", payUrl);
             payResultMap = orderService.getWxPayResultMap(order, ip);
+//            payResultMap = orderService.createNative(order);
             log.info("payResultMap= {}", payResultMap);
             //if (payUrl == null) {
             if (payResultMap == null) {
@@ -67,7 +68,6 @@ public class WxPayController {
                 return ResponseResult.fail("该订单已支付，请勿重复提交");
             } else {
                 try {
-
                     payUrl = payResultMap.get("code_url");
                     //BufferedImage bufImg = null;
                     ////将获取微信后台返回的支付codeURL 转化为 二维码

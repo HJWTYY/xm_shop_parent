@@ -2034,7 +2034,7 @@ Expr = Sizzle.selectors = {
 			return hash && hash.slice( 1 ) === elem.id;
 		},
 
-		"root": function( elem ) {
+		"": function( elem ) {
 			return elem === docElem;
 		},
 

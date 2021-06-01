@@ -60,27 +60,27 @@ public class ProductServiceImpl implements ProductService {
      */
     @Override
     public int addProduct(ProductDto productDto) throws FileUploadException {
-        //1.文件上传
-        //String fileName = StringUtil.reFileName(productDto.getFileName());
-        //String filePath = productDto.getUploadPath()+"\\"+ fileName;
-        //
-        //try {
-        //    StreamUtils.copy(productDto.getInputStream(),new FileOutputStream(filePath));
-        //} catch (IOException e) {
-        //    throw new FileUploadException("文件上传失败"+e.getMessage());
-        //}
+//        1.文件上传
+        String fileName =productDto.getFileName();
+        String filePath = productDto.getUploadPath()+"\\"+ fileName;
+
+        try {
+            StreamUtils.copy(productDto.getInputStream(),new FileOutputStream(filePath));
+        } catch (IOException e) {
+            throw new FileUploadException("文件上传失败"+e.getMessage());
+        }
 
         //将文件上传ftp服务器上
         //按照时间创建文件夹
-        String timePath = new SimpleDateFormat("yyyyMMdd").format(new Date());
-
-        String filePath = path + "/" + timePath;
-        String fileName = StringUtil.reFileName(productDto.getFileName());
-        boolean flag = FtpUtils.uploadFile(host, port, username, password, basePath, filePath, fileName, productDto.getInputStream());
-
-        if (!flag) {
-            throw new FileUploadException("文件上传失败");
-        }
+//        String timePath = new SimpleDateFormat("yyyyMMdd").format(new Date());
+//
+//        String filePath = path + "/" + timePath;
+//        String fileName = StringUtil.reFileName(productDto.getFileName());
+//        boolean flag = FtpUtils.uploadFile(host, port, username, password, basePath, filePath, fileName, productDto.getInputStream());
+//
+//        if (!flag) {
+//            throw new FileUploadException("文件上传失败");
+//        }
 
         //2.保存到数据库,将 dto 转化为 pojo
         Product product = new Product();
@@ -88,7 +88,7 @@ public class ProductServiceImpl implements ProductService {
         //product.setImage(filePath);
         //地址修改为服务器上的http地址
         //product.setImage(baseUrl+"/" + filePath + "/" + fileName);
-        product.setImage(baseUrl+"/" + timePath + "/" + fileName);
+        product.setImage(fileName);
 
 
         ProductType productType = new ProductType();
@@ -145,31 +145,32 @@ public class ProductServiceImpl implements ProductService {
     @Override
     public int modifyProduct(ProductDto productDto) throws FileUploadException {
         //1.文件上传
-        //String fileName = StringUtil.reFileName(productDto.getFileName());
-        //String filePath = productDto.getUploadPath()+"\\"+ fileName;
-        //
-        //try {
-        //    StreamUtils.copy(productDto.getInputStream(),new FileOutputStream(filePath));
-        //} catch (IOException e) {
-        //    throw new FileUploadException("文件上传失败"+e.getMessage());
-        //}
+        String fileName = productDto.getFileName();
 
-        String timePath = new SimpleDateFormat("yyyyMMdd").format(new Date());
-        String filePath = path + "/" + timePath;
-        String fileName = StringUtil.reFileName(productDto.getFileName());
+        String filePath = productDto.getUploadPath()+"/"+fileName;
 
-        boolean flag = FtpUtils.uploadFile(host, port, username, password, basePath, filePath, fileName, productDto.getInputStream());
-
-        if (!flag) {
-            throw new FileUploadException("文件上传失败");
+        try {
+            StreamUtils.copy(productDto.getInputStream(),new FileOutputStream(filePath));
+        } catch (IOException e) {
+            throw new FileUploadException("文件上传失败"+e.getMessage());
         }
+
+//        String timePath = new SimpleDateFormat("yyyyMMdd").format(new Date());
+//        String filePath = path + "/" + timePath;
+//        String fileName = StringUtil.reFileName(productDto.getFileName());
+//
+//        boolean flag = FtpUtils.uploadFile(host, port, username, password, basePath, filePath, fileName, productDto.getInputStream());
+//
+//        if (!flag) {
+//            throw new FileUploadException("文件上传失败");
+//        }
 
         //2.保存到数据库,将 dto 转化为 pojo
         Product product = new Product();
         BeanUtils.copyProperties(productDto,product);
         //product.setImage(filePath);
         //https://www.xmlvhy.com/images/20190301512474268.jpg
-        product.setImage(baseUrl + "/" + timePath + "/" + fileName);
+        product.setImage(fileName);
 
         ProductType productType = new ProductType();
         productType.setId(productDto.getProductTypeId());
