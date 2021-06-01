@@ -56,6 +56,7 @@
             location.href = '${pageContext.request.contextPath}/front/product/showProductDetail?id=' + id;
         }
     </script>
+
 </head>
 
 <body class="animated fadeIn">
@@ -163,7 +164,7 @@
                             <div class="panel-body">
                                 <div class="art-back clear-back">
                                     <div class="add-padding-bottom">
-                                        <img src="${pageContext.request.contextPath}/images/${product.image}" class="shopImg">
+                                        <img src="/upload/images/${product.image}" class="shopImg">
                                     </div>
                                     <h4 class="myH4"><a href="#">${product.name}</a></h4>
                                     <div class="user clearfix pull-right"><span>¥ </span>${product.price}</div>

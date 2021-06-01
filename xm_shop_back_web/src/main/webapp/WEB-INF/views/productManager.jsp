@@ -239,7 +239,7 @@
                         $('#pro-price').val(result.data.price);
                         $('#info').val(result.data.info);
                         $('#pro-TypeId').val(result.data.productType.id);
-                        $('#img2').attr('src',result.data.image);
+                        $('#img2').attr('src',"/upload/images/"+result.data.image);
                     }
                 }
             );

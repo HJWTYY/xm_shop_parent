@@ -312,7 +312,7 @@ public class OrderServiceImpl implements OrderService {
         params.put("total_fee", String.valueOf(price));
 
         /*终端IP,必传*/
-        params.put("spbill_create_ip","127.0.0.1");
+        params.put("spbill_create_ip",ip);
         /*微信回调地址*/
         params.put("notify_url",WxPayConfig.wxpay_callback);
         /*trade_type=NATIVE，此参数必传。此id为二维码中包含的商品ID，商户自行定义*/

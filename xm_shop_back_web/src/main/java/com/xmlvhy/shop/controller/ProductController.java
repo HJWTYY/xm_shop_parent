@@ -16,11 +16,13 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.util.ObjectUtils;
+import org.springframework.util.ResourceUtils;
 import org.springframework.web.bind.annotation.ModelAttribute;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import javax.servlet.http.HttpSession;
+import java.io.FileNotFoundException;
 import java.io.OutputStream;
 import java.util.HashMap;
 import java.util.List;
@@ -86,8 +88,7 @@ public class ProductController {
      */
     @RequestMapping("addProduct")
     public String addProduct(ProductVo productVo, Integer pageNum, HttpSession session, Model model){
-        String uploadPath = session.getServletContext().getRealPath("/WEB-INF/upload");
-
+        String uploadPath = System.getProperty("user.dir")+"/images";
         try {
             ProductDto productDto = new ProductDto();
 
@@ -95,7 +96,7 @@ public class ProductController {
             productDto.setInputStream(productVo.getFile().getInputStream());
             productDto.setFileName(productVo.getFile().getOriginalFilename());
 
-            //productDto.setUploadPath(uploadPath);
+            productDto.setUploadPath(uploadPath);
 
             //将数据保存到数据库中
             int rows = productService.addProduct(productDto);
@@ -173,9 +174,9 @@ public class ProductController {
      * @return java.lang.String
      */
     @RequestMapping("modifyProduct")
-    public String modifyProduct(ProductVo productVo, Integer pageNum, HttpSession session, Model model)  {
+    public String modifyProduct(ProductVo productVo, Integer pageNum, HttpSession session, Model model) throws FileNotFoundException {
         //TODO:通过session拿到上传文件的实际路径 : 注释： 修改上传路径为我的云服务器
-        String uploadPath = session.getServletContext().getRealPath("/WEB-INF/images");
+        String uploadPath = System.getProperty("user.dir")+"/images";
         //TODO:CommonsMultipartFile 文件上传
         /*最好不要直接把web层的 CommonsMultipartFile 对象传给service,这样就会出现 service 层
         调用web层了，需要避免耦合，所以要封装 dto 类，专门用于数据传输封装*/
