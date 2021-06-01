@@ -545,7 +545,7 @@
             <tr>
                 <td>${order.id}</td>
                 <td>${order.product.name}</td>
-                <td><img src="/images/${order.product.image}" alt="" width="60" height="60"></td>
+                <td><img src="/upload/images/${order.product.image}" alt="" width="60" height="60"></td>
                 <td>${order.productNum}</td>
                 <td>&yen; ${order.totalPrice}</td>
             </tr>
