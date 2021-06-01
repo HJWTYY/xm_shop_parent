@@ -16,7 +16,7 @@ public class AliPayConfig {
     //public static String notify_url = "http://xiaomo.mynatapp.cc/front/pay/aliPayNotifyNotice";
 
     //部署服务器上，注意修改地址：
-    public static String notify_url = "http://112.74.180.80/xmShopFront/front/pay/aliPayNotifyNotice";
+    public static String notify_url = "http://112.74.180.80/xmShopFront/front/pay/aliPayReturnNotice";
 
     // 页面跳转同步通知页面路径 需http://格式的完整路径，不能加?id=123这类自定义参数，必须外网可以正常访问
     //public static String return_url = "https://xiaomo.mynatapp.cc/front/pay/aliPayReturnNotice";
