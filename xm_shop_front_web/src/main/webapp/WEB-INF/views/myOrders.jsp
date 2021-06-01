@@ -336,7 +336,7 @@
                     <c:forEach items="${orderVo.orderItemList}" var="orderItem">
                         <tr>
                             <td class="col-sm-1">
-                                <img src="/images/${orderItem.product.image}" alt="" style="cursor: pointer" onclick="showProductFromOrder(${orderItem.product.id})">
+                                <img src="/upload/images/${orderItem.product.image}" alt="" style="cursor: pointer" onclick="showProductFromOrder(${orderItem.product.id})">
                             </td>
                             <td><span style="cursor: pointer" onclick="showProductFromOrder(${orderItem.product.id})">${orderItem.product.name}</span></td>
                             <td><span>${orderItem.num}</span></td>

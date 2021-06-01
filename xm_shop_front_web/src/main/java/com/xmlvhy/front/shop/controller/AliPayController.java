@@ -200,7 +200,7 @@ public class AliPayController {
             //支付宝交易号
             String trade_no = new String(request.getParameter("trade_no").getBytes("ISO-8859-1"), "UTF-8");
 
-            //交易状态
+            //
             String trade_status = new String(request.getParameter("trade_status").getBytes("ISO-8859-1"), "UTF-8");
 
             //付款金额

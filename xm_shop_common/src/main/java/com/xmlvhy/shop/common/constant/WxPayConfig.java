@@ -17,7 +17,7 @@ public class WxPayConfig {
     //public final static String wxpay_callback = "http://xiaomo.mynatapp.cc/front/wxPay/callback";
 
     //部署服务器上
-    public final static String wxpay_callback = "http://112.74.180.80/xmShopFront/front/wxPay/callback";
+    public final static String wxpay_callback = "http://47.96.1.197/xmShopFront/front/wxPay/callback";
 
     /*统一下单url*/
     public final static String UNIFIED_ORDER_URL = "https://api.mch.weixin.qq.com/pay/unifiedorder";
